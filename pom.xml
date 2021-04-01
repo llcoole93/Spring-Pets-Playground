@@ -52,7 +52,7 @@
 	</build>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/llcoole93/Spring-Pets-Playground.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:llcoole93/Spring-Pets-Playground.git</developerConnection>
 	  <tag>spring-pets-playground-0.0.2</tag>
   </scm>
 </project>
