@@ -1,4 +1,4 @@
-package springpetsplayground;
+package handler.springframework.springpetsplayground;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
