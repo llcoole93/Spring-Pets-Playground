@@ -1,11 +1,14 @@
 package handler.springframework.springpetsplayground.model;
 
+import jdk.jfr.Enabled;
+
 import java.time.LocalDate;
 
 /**
  * Created by Evan on 03 / 2021
  */
-public class Pet {
+@Enabled
+public class Pet extends BaseEntity {
 
     private PetType petType;
     private Owner owner;

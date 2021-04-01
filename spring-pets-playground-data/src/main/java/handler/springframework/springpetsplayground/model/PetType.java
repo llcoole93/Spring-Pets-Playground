@@ -3,7 +3,7 @@ package handler.springframework.springpetsplayground.model;
 /**
  * Created by Evan on 03 / 2021
  */
-public class PetType {
+public class PetType extends BaseEntity {
 
     private String name;
 
