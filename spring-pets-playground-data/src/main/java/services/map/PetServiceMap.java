@@ -1,14 +1,14 @@
 package services.map;
 
 import handler.springframework.springpetsplayground.model.Pet;
-import services.CrudService;
+import services.PetService;
 
 import java.util.Set;
 
 /**
  * Created by Evan on 4/7/2021
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
