@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by Evan on 4/7/2021
  */
 @Controller
-public class VetController {
-
-    @RequestMapping({"/vets", "/vets/index", "/vets/index.html"})
-    public String listVets() {
-        return "vets/index";
+public class OwnerController {
+    @RequestMapping({"/owner", "/owner/index", "/owner/index.html"})
+    public String listowner() {
+        return "owner/index";
     }
 }
