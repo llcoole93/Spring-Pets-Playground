@@ -1,4 +1,4 @@
-package services;
+package handler.springframework.springpetsplaygroundservices.services;
 
 import handler.springframework.springpetsplayground.model.Vet;
 

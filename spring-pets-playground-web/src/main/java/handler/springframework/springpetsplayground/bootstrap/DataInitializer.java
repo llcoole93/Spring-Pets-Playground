@@ -4,10 +4,10 @@ import handler.springframework.springpetsplayground.model.Owner;
 import handler.springframework.springpetsplayground.model.Vet;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import services.OwnerService;
-import services.VetService;
-import services.map.OwnerServiceMap;
-import services.map.VetServiceMap;
+import handler.springframework.springpetsplaygroundservices.services.OwnerService;
+import handler.springframework.springpetsplaygroundservices.services.VetService;
+import handler.springframework.springpetsplaygroundservices.services.map.OwnerServiceMap;
+import handler.springframework.springpetsplaygroundservices.services.map.VetServiceMap;
 
 /**
  * Created by Evan on 4/8/2021
