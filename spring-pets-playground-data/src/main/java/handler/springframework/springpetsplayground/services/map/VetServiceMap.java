@@ -2,12 +2,14 @@ package handler.springframework.springpetsplayground.services.map;
 
 import handler.springframework.springpetsplayground.model.Vet;
 import handler.springframework.springpetsplayground.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by Evan on 4/7/2021
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override

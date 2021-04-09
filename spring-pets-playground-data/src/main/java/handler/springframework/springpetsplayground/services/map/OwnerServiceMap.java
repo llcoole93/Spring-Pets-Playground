@@ -2,12 +2,14 @@ package handler.springframework.springpetsplayground.services.map;
 
 import handler.springframework.springpetsplayground.model.Owner;
 import handler.springframework.springpetsplayground.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by Evan on 4/7/2021
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

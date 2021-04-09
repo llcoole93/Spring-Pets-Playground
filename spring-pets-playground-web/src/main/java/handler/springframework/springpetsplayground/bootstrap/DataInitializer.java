@@ -2,12 +2,10 @@ package handler.springframework.springpetsplayground.bootstrap;
 
 import handler.springframework.springpetsplayground.model.Owner;
 import handler.springframework.springpetsplayground.model.Vet;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 import handler.springframework.springpetsplayground.services.OwnerService;
 import handler.springframework.springpetsplayground.services.VetService;
-import handler.springframework.springpetsplayground.services.map.OwnerServiceMap;
-import handler.springframework.springpetsplayground.services.map.VetServiceMap;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Evan on 4/8/2021
@@ -17,9 +15,9 @@ public class DataInitializer implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataInitializer() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataInitializer(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
