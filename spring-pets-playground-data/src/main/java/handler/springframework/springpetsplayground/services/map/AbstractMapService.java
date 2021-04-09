@@ -1,4 +1,4 @@
-package handler.springframework.springpetsplaygroundservices.services.map;
+package handler.springframework.springpetsplayground.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

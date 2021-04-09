@@ -1,4 +1,4 @@
-package handler.springframework.springpetsplaygroundservices.services;
+package handler.springframework.springpetsplayground.services;
 
 import handler.springframework.springpetsplayground.model.Owner;
 

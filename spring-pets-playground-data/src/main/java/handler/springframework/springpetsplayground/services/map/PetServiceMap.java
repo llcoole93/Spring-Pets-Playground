@@ -1,7 +1,7 @@
-package handler.springframework.springpetsplaygroundservices.services.map;
+package handler.springframework.springpetsplayground.services.map;
 
 import handler.springframework.springpetsplayground.model.Pet;
-import handler.springframework.springpetsplaygroundservices.services.PetService;
+import handler.springframework.springpetsplayground.services.PetService;
 
 import java.util.Set;
 
