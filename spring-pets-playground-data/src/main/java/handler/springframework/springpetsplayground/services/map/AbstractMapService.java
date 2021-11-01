@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * Created by Evan on 4/7/2021
  */
-public abstract class AbstractMapService <T extends BaseEntity, ID extends Long> {
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
     protected Map<Long, T> map = new HashMap<>();
 
@@ -15,7 +15,7 @@ public abstract class AbstractMapService <T extends BaseEntity, ID extends Long>
         return new HashSet<>(map.values());
     }
 
-    T findById(ID id){
+    T findById(ID id) {
         return map.get(id);
     }
 
