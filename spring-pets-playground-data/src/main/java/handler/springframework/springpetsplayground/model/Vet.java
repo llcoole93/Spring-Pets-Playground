@@ -5,4 +5,5 @@ package handler.springframework.springpetsplayground.model;
  */
 public class Vet extends Person {
 
+    private String occupation;
 }
