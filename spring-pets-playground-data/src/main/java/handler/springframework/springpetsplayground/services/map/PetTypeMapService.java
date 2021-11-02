@@ -2,12 +2,14 @@ package handler.springframework.springpetsplayground.services.map;
 
 import handler.springframework.springpetsplayground.model.PetType;
 import handler.springframework.springpetsplayground.services.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by Evan on 11/1/2021
  */
+@Service
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
 
     @Override

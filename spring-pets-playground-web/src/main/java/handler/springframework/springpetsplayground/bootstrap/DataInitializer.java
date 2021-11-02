@@ -1,8 +1,10 @@
 package handler.springframework.springpetsplayground.bootstrap;
 
 import handler.springframework.springpetsplayground.model.Owner;
+import handler.springframework.springpetsplayground.model.PetType;
 import handler.springframework.springpetsplayground.model.Vet;
 import handler.springframework.springpetsplayground.services.OwnerService;
+import handler.springframework.springpetsplayground.services.PetTypeService;
 import handler.springframework.springpetsplayground.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -14,14 +16,26 @@ import org.springframework.stereotype.Component;
 public class DataInitializer implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
-    public DataInitializer(OwnerService ownerService, VetService vetService) {
+    public DataInitializer(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        dog.setName("cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
+        System.out.println("loaded Pet Types");
 
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
