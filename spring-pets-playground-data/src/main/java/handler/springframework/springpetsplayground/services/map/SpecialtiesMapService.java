@@ -1,7 +1,7 @@
 package handler.springframework.springpetsplayground.services.map;
 
 import handler.springframework.springpetsplayground.model.Specialty;
-import handler.springframework.springpetsplayground.services.SpecialtiesService;
+import handler.springframework.springpetsplayground.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -10,7 +10,7 @@ import java.util.Set;
  * @author Evan on 11/2/2021
  */
 @Service
-public class SpecialtiesMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtiesMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
     @Override
     public Set<Specialty> findAll() {
