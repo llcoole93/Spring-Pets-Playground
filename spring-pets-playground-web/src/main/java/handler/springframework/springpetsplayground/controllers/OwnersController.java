@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by Evan on 4/7/2021
  */
+@RequestMapping("/owners")
 @Controller
 public class OwnersController {
 
@@ -17,10 +18,15 @@ public class OwnersController {
         this.ownerService = ownerService;
     }
 
-    @RequestMapping({"/owners", "/owners/index", "/owners/index.html"})
-    public String listowner(Model model) {
+    @RequestMapping({"/index", "/index.html"})
+    public String listOwner(Model model) {
         model.addAttribute("owners", ownerService.findAll());
 
         return "owners/index";
+    }
+
+    @RequestMapping({"/find", ""})
+    public String findOwner() {
+        return "notImplemented";
     }
 }
